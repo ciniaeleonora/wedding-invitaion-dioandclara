@@ -1,22 +1,28 @@
   import React, { useEffect, useState } from 'react'
   import Comments from './Comments'
 
-  function Congratulations() {
+const serverUrl = process.env.REACT_APP_SERVER_URL;
+
+function Congratulations() {
     let [comments, setComments] = useState([])
     let [newComment, setNewComment] = useState({
       name: '',
       message: ''
     })
 
-    useEffect(() => {
-      fetch('http://localhost:3000')
+    function fetchComments () {
+      fetch(serverUrl)
         .then(response => response.json())
         .then(data => setComments(data))
-    })
+    }
+
+    useEffect(() => {
+      fetchComments()
+    }, [])
 
     function addComment(event){
       event.preventDefault()
-      fetch('http://localhost:3000', {  
+      fetch(serverUrl, {  
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -24,7 +30,10 @@
           body: JSON.stringify(newComment),
       })
         .then(res => res.json())
-        .then(post => console.log(post))
+        .then(post => {
+          console.log(post)
+          fetchComments()
+        })
         .catch(err => console.log(err))
     }
     
