@@ -1,7 +1,7 @@
 import React from 'react'
 
-import dio from '../assets/RJ770006.jpg'
-import lala from '../assets/RJ770042 LALA.jpg'
+import dio from '../assets/RJ770006a.jpg'
+import lala from '../assets/RJ770042a.jpg'
 
 function Wedding() {
   return (

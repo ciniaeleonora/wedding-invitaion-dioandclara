@@ -1,5 +1,5 @@
 import React from 'react'
-import RJ770638 from '../assets/RJ770638.jpg'
+import RJ770638 from '../assets/RJ770638a.jpg'
 
 function Jumbotron() {
   return (
