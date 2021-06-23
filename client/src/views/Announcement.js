@@ -1,15 +1,20 @@
 import React from 'react'
-import { useHistory, useParams } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 function Announcement () {
   const history = useHistory()
-  const name = useParams()
+  const location = useLocation()
 
   function goToHome (event) {
     history.push('/home/')
   }
 
-  console.log(name);
+  function getName (val) {
+    const [_, name] = val.split('=');
+    return name;
+  }
+
+  console.log(location.search);
 
   return (
     <div
@@ -30,7 +35,7 @@ function Announcement () {
 
         <p style={{fontFamily: 'Quicksand', color: '#798777', textAlign: "left", fontSize:'1.7vh', marginTop:'5vh'}}>
         
-        Dear <b>{name.name}</b>, 
+        Dear <b>{getName(location.search)}</b>, 
 
         <br></br>
 
