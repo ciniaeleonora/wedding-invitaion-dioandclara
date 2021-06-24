@@ -1,5 +1,6 @@
 import React from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
+import DSC_5131 from '../assets/DSC_5131 ed.jpg'
 
 function Announcement () {
   const history = useHistory()
@@ -28,17 +29,14 @@ function Announcement () {
         marginTop: '5%'
       }}
     >
+      <h1 style={{fontFamily: 'Sacramento', color: '#798777'}}> <b> Dio & Clara </b> </h1>
+      <img className="rounded-circle img-fluid" alt='lala-dio' src={DSC_5131} style={{width: '48%', marginLeft: 0}}/>
       <div>
-
-        <h1 style={{fontFamily: 'Sacramento', color: '#798777'}}> ❤ </h1>
-        <h1 style={{fontFamily: 'Sacramento', color: '#798777'}}> <b> Dio & Clara </b> </h1>
 
         <p style={{fontFamily: 'Quicksand', color: '#798777', textAlign: "left", fontSize:'1.7vh', marginTop:'5vh'}}>
         
         Dear <b>{getName(location.search)}</b>, 
-
         <br></br>
-
         Demi mengurangi penyebaran virus Covid-19, maka dihimbau untuk selalu mengikut protokol kesehatan sebagai berikut:
         <br /> <br />
         1. Selalu menggunakan masker jika tidak sedang makan atau minum <br />
