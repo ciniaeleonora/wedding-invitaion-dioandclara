@@ -1,7 +1,7 @@
 import React from 'react'
 
-import dio from '../assets/RJ770006a.jpg'
-import lala from '../assets/RJ770042a.jpg'
+import dio from '../assets/RJ770006a.jpeg'
+import lala from '../assets/RJ770042a.jpeg'
 
 function Wedding() {
   return (
@@ -11,11 +11,11 @@ function Wedding() {
         <div className='col-6' style={{marginTop: '5%'}}>
           <img className="rounded-circle img-fluid" alt='lala-dio' src={dio} style={{width: '65%', marginLeft: 0}}/>
         </div>
-        <div className='col-6' style={{marginTop: '20%'}}>
+        <div className='col-6' style={{marginTop: '5%'}}>
           <h2 style={{fontFamily: 'Sacramento', color: '#556052', fontSize: '5vh'}}> <b>dr. Dio Kusbandiar Prijadi </b></h2>
         </div>
-        <div className='col-6' style={{marginTop: '20%', marginLeft:'25%'}}>
-          <h2 style={{fontFamily: 'Sacramento', color: '#556052', fontSize:'7vh'}}>❤</h2>
+        <div className='col-6' style={{marginTop: '5%', marginLeft:'25%'}}>
+          <h2 style={{fontFamily: 'Sacramento', color: '#556052', fontSize:'7vh'}}> <b>&</b></h2>
         </div>
         <div className='col-6' style={{marginTop: '5%'}}>
           <h2 style={{fontFamily: 'Sacramento', color: '#556052', fontSize: '5vh'}} ><b>dr. Clara Cecilia Pongantung </b></h2>

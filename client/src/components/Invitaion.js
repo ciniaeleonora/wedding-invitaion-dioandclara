@@ -6,7 +6,7 @@ function Invitaion() {
     <h1 style={{fontFamily: 'Sacramento', color: '#556052', marginBottom: '2vh', fontSize: '7vh'}}><u><b>Invitation</b></u></h1>
       <div className='card p-4' style={{marginBottom:'10vh', backgroundColor: '#E8EAE6'}}>
         <h1 style={{fontFamily: 'Quicksand', color: '#556052'}}>
-            <div> ❤ Save The Date ❤</div>
+            <div>Save The Date</div>
         </h1>
         <h1 style={{fontFamily: 'Quicksand', color: '#556052'}} >
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-calendar-check" viewBox="0 0 16 16">
